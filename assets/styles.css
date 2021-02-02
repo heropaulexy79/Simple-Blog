@@ -1,0 +1,21 @@
+body {
+    background-color: blue;
+    color: #fff;
+    background-repeat: no-repeat
+}
+
+body * {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a,
+a:hover,
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+form.login-form {
+    padding: 10px;
+    margin: 10px;
+}

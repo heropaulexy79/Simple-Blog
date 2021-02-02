@@ -1,0 +1,27 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Article List</title>
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+    </head>
+    <body>
+        <h1>Welcome to My Blog</h2>
+        <nav>
+            <ul>
+                <li>
+                    <form class="login-link" action="{% url 'accounts:login' %}" method="post">
+                        {% csrf_token %}
+                        <button type="submit">Login</button>
+                    <form>
+                </li>
+            </ul>
+        </nav>
+        <div class="wrapper">
+            
+            {% block content %}
+
+            {% endblock %}
+        </div>
+    </body>
+ </html>
